@@ -54,7 +54,10 @@ header {
   padding-top: .08rem;
   padding-left: .16rem;
   padding-right: .16rem;
-  background: url(../images/index/fjj_header_bg.png) no-repeat center center / cover;
+  background-image: url(../images/index/fjj_header_bg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
   text-align: justify;
   transition: all .5s;
 }
@@ -167,7 +170,10 @@ footer {
   padding-top: .2rem;
   padding-left: .16rem;
   padding-right: .16rem;
-  background: url(../images/index/fjj_footer_bg.png) no-repeat center center / cover;
+  background-image: url(../images/index/fjj_footer_bg.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
   text-align: justify;
   font-size: 0;
   transition: all .5s;
@@ -268,6 +274,8 @@ section.q_link_fjj ul.inner {
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -moz-justify-content: center;
   justify-content: space-between;
   -webkit-justify-content: space-between;
   padding: .17rem;
@@ -283,6 +291,7 @@ section.q_link_fjj ul.inner::after {
 section.q_link_fjj ul.inner li.item {
   flex: 0 0 32%;
   -webkit-flex: 0 0 32%;
+  -webkit-box-flex: 1.0;
   line-height: 1.5;
   height: 2.7rem;
   width: 32%;
@@ -349,7 +358,7 @@ section.recommend_fjj ul.list li {
   border-radius: 5px;
   margin-bottom: 3px;
   background: #fff;
-  min-height: 60px;
+  min-height: 66px;
 }
 section.recommend_fjj ul.list li::after {
   content: '';
@@ -360,8 +369,8 @@ section.recommend_fjj ul.list li::after {
 }
 section.recommend_fjj ul.list li div.pic_area {
   position: relative;
-  width: 1.4rem;
-  height: 1.4rem;
+  width: 1.5rem;
+  height: 1.5rem;
   border-radius: 5px;
 }
 section.recommend_fjj ul.list li div.pic_area img {
@@ -383,6 +392,7 @@ section.recommend_fjj ul.list li div.info_area {
   justify-content: space-between;
   width: 100%;
   height: 100%;
+  min-height: 66px;
   padding-top: .12rem;
   padding-left: 1.44rem;
   padding-right: .3rem;
@@ -397,11 +407,13 @@ section.recommend_fjj ul.list li div.info_area p {
   white-space: nowrap;
 }
 section.recommend_fjj ul.list li div.info_area p.title {
+  flex-shrink: 0;
   font-size: 14px;
   color: #191919;
   line-height: 1.1;
 }
 section.recommend_fjj ul.list li div.info_area p.company {
+  flex-shrink: 0;
   font-size: 12px;
   color: #7A7774;
 }
@@ -492,6 +504,7 @@ section.secret_fjj ul.list li.item {
   padding: 4px;
   border-radius: 5px;
   height: 1.86rem;
+  min-height: 84px;
   margin-bottom: 2px;
 }
 section.secret_fjj ul.list li.item div.bg {
@@ -528,6 +541,7 @@ section.secret_fjj ul.list li.item div.bg a.inner div.info_area {
   padding-bottom: .1rem;
 }
 section.secret_fjj ul.list li.item div.bg a.inner div.info_area p.title {
+  flex-shrink: 0;
   display: -webkit-box;
   font-size: 14px;
   line-height: 1;
@@ -541,7 +555,9 @@ section.secret_fjj ul.list li.item div.bg a.inner div.info_area p.title {
   -webkit-box-orient: vertical;
 }
 section.secret_fjj ul.list li.item div.bg a.inner div.info_area p.from {
+  flex-shrink: 0;
   font-size: 12px;
+  line-height: 1.5;
   color: #7B7A7D;
   width: auto;
   max-width: 3rem;
@@ -559,7 +575,6 @@ section.secret_fjj ul.list li.item div.bg a.inner div.links {
   width: 100%;
   color: #b4b4b4;
   font-size: 12px;
-  padding-top: .1rem;
 }
 section.secret_fjj ul.list li.item div.bg a.inner div.links img {
   width: .28rem;
@@ -664,22 +679,27 @@ div.sidebar_fjj ul.address_list_fjj li span {
   float: left;
   color: #fff;
   font-size: 12px;
+  pointer-events: none;
 }
 div.sidebar_fjj ul.address_list_fjj li div.status {
   float: right;
   width: .44rem;
   height: .44rem;
   margin-top: .22rem;
-  background: url(../images/index/sidebar/add.png) no-repeat center center / cover;
+  background: url(../images/index/sidebar/add.png) no-repeat center center;
+  background-size: cover;
+  pointer-events: none;
 }
 div.sidebar_fjj ul.address_list_fjj li.active {
-  background: url(../images/index/sidebar/bg.png) no-repeat center center / contain;
+  background: url(../images/index/sidebar/bg.png) no-repeat center center;
+  background-size: contain;
 }
 div.sidebar_fjj ul.address_list_fjj li.active span {
   color: #13370C;
 }
 div.sidebar_fjj ul.address_list_fjj li.active div.status {
-  background: url(../images/index/sidebar/sure.png) no-repeat center center / cover;
+  background: url(../images/index/sidebar/sure.png) no-repeat center center;
+  background-size: cover;
 }
 /*--为了sidebar而存在的遮罩*/
 div.mask_fjj {

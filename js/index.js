@@ -11,7 +11,7 @@
   var header = document.querySelector("header");
   var footer = document.querySelector("footer");
   console.log(inner);
-  
+
   console.log(width_sidebar);
   function slide_right() {
       inner.style.transition = "all .5s";
