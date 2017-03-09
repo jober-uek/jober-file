@@ -287,9 +287,15 @@ section.banner_fjj {
 section.q_link_fjj {
   background: #F4EAD5;
   ul.inner {
-    display: flex;
+    display: -webkit-box !important;
+    display: -webkit-flex !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     justify-content: space-between;
+    -webkit-justify-content: space-between;
     padding: .17rem;
     padding-bottom: 0;
     &::after {
@@ -428,7 +434,7 @@ section.recommend_fjj {
           max-width: 100%;
           margin-top: .1rem;
           margin-bottom: .1rem;
-          padding-left: 2em;
+          padding-left: .23rem;
           background: url(../images/index/secret/line.png) repeat-x center center/cover;
           background-clip: content-box;
           height: 2px;
