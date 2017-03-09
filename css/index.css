@@ -402,8 +402,11 @@ section.recommend_fjj ul.list li div.info_area p.line {
   width: 100%;
   max-width: 100%;
   margin-top: .1rem;
-  border-bottom: 1px dotted #7A7774;
-  height: 0;
+  margin-bottom: .1rem;
+  padding-left: 2em;
+  background: url(../images/index/secret/line.png) repeat-x center center / cover;
+  background-clip: content-box;
+  height: 2px;
   line-height: 0;
 }
 section.recommend_fjj ul.list li div.info_area div.link {
@@ -540,6 +543,7 @@ section.secret_fjj ul.list li.item div.bg a.inner div.info_area p.from {
   text-overflow: ellipsis;
 }
 section.secret_fjj ul.list li.item div.bg a.inner div.info_area p.line {
+  margin: .1rem auto;
   width: 100%;
   height: 2px;
   background: url(../images/index/secret/line.png) repeat-x center center / cover;
