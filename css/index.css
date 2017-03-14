@@ -14,7 +14,10 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+dl,
+dd,
+dt {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -58,6 +61,8 @@ header {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  -webkit-background-size: 100% 100%;
+  behavior: url(backgroundsize.min.htc);
   text-align: justify;
   transition: all .5s;
 }

@@ -8,7 +8,7 @@ body {
   font-size: 16px;
   background: #252424;
 }
-html,body,ul,li,input,p,h1,h2,h3,h4,h5,h6 {
+html,body,ul,li,input,p,h1,h2,h3,h4,h5,h6,dl,dd,dt {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -58,10 +58,14 @@ header {
   padding-top: .08rem;
   padding-left: .16rem;
   padding-right: .16rem;
+
   background-image: url(../images/index/fjj_header_bg.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  -webkit-background-size:100% 100%;
+  behavior: url(backgroundsize.min.htc);
+
   text-align: justify;
   transition: all .5s;
   &::after {
