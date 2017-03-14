@@ -30,7 +30,13 @@ body{
 	padding: 0.08rem 0.16rem;
 	box-sizing:border-box;
 	display: flex;
-	justify-content:space-between;
+	display: -ms-flex;
+	display: -webkit-flex;
+	-webkit-justify-content: space-between;
+	-moz-justify-content: space-between;
+	-ms-justify-content: space-between;
+	-o-justify-content: space-between;
+	justify-content: space-between;
 	position: fixed;
 	top: 0;
 	z-index: 99;
@@ -66,10 +72,12 @@ body{
 
 /*内容开始*/
 .content{
+	box-sizing: border-box;
 	width: 100%;
-	height: auto;
+	height:100%;
 	text-align: center;
 	position: relative;
+	padding-top: .8rem;
 }
 @keyframes yao {
 	from{
@@ -84,20 +92,30 @@ body{
 	}
 }
 .content img:nth-child(1){
+	position: absolute;
+	top:20%;
+	left:0;
+	right:0;
+	margin: 0 auto;
 	width: 4.85rem;
-	height: auto;
 	animation: yao .05s  10 alternate backwards;
 	transform-origin: 70% 80%;
 }
 .content img:nth-child(2){
 	position: absolute;
-	top: -0.8rem;
-	left: 2.0rem;
+	top: 13%;
+	left:0;
+	right:0;
+	margin: 0 auto;
 	width: 4.07rem;
 	height: 6.48rem;
 }
 .content img:nth-child(3){
-	margin-top: 1rem;
+	position: absolute;
+	top:65%;
+	left:0;
+	right:0;
+	margin: 0 auto;
 	width: 4.12rem;
 	height: 1.99rem;
 }
